@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Osama Alfares</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        
+        <form id="gameForm" method="post" action="" enctype="multipart/form-data">
+            <!-- مربع الإدخال الأول -->
+            <label for="name"> Player Name:</label>
+            <input class="f" type="text" id="name" name="name" required><br><br>
+
+            <!-- مربع الإدخال الثاني -->
+
+            <label for="factor">Factor:</label>
+            <input class="f" type="number" id="factor" name="factor" required><br><br>
+
+            <!-- مربع الإدخال الثالث -->
+
+            <label for="numberOfProblems">Number of Problems:</label>
+            <input class="f" type="number" id="numberOfProblems" name="numberOfProblems" required><br><br>
+
+            <!-- إدخال العملية المرادة -->
+            <label for="operation">Operation:</label>
+            <select id="operation" name="operation" required>
+                <option value="Addition">Addition</option>
+                <option value="Multiplication">Multiplication</option>
+            </select><br><br>
+            <button type="button" onclick="startGame()">Start Game</button>
+            <button id="r" type="button" onclick="startResult()">Calculate Score</button>
+
+        </form>
+    </div>
+
+    <div>
+        <p id="questions" style="" class="ques">
+            <!-- Questions will be added here -->
+        </p>
+        <p id="secor"></p>
+    </div>
+</body>
+
+</html>
